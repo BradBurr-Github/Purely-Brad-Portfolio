@@ -3,19 +3,20 @@ import { useState, useEffect } from 'react';
 function Header() {
     return (  
       <header className="font-[Poppins]">
-        <h1>Brad Burr</h1>
-        <ul className="flex items-center gap-[4vw]">
+        <div className="heading-name">Brad Burr</div>
+        <div className="heading-title">Senior Software Engineer</div>
+        <ul className="header-links">
             <li>
-            <a className="hover:text-gray-50" href="#">My Portfolio</a>
+            <a className="hover:text-gray-200" href="#">My Portfolio</a>
             </li>
             <li>
-            <a className="hover:text-gray-50" href="#">Experience</a>
+            <a className="hover:text-gray-200" href="#">Experience</a>
             </li>
             <li>
-            <a className="hover:text-gray-50" href="#">About Me</a>
+            <a className="hover:text-gray-200" href="#">About Me</a>
             </li>
             <li>
-            <a className="hover:text-gray-50" href="#">Contact Me</a>
+            <a className="hover:text-gray-200" href="#">Contact Me</a>
             </li>
         </ul>
       </header>
