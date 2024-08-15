@@ -32,10 +32,23 @@ body {
 header {
   background-color: lightsteelblue;
   color: midnightblue;
-  display:inline-block;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-top: 20px;
   padding-left: 20px;
   text-align: left;
+  justify-content: space-between;
+}
+
+.heading-picture-name-title {
+  display:flex;
+  flex-direction: row;
+}
+
+.heading-image {
+  width: 90px;
+  border-radius: 50%;
 }
 
 .heading-name {
@@ -44,21 +57,24 @@ header {
 }
 
 .heading-title {
-  font-size: 20px;
-  margin-left: 20px;
-  margin-top: -5px;
+  font-size: 16px;
+  margin-left: 22px;
+  margin-top: -10px;
 }
 
 .header-links {
+  font-size: 16px;
   list-style: none;
   display: flex;
   flex-direction: row;
-  padding: 20px;
-  margin: 0;
+  flex-wrap: wrap;
 }
 
 .header-links li {
   margin-right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 
