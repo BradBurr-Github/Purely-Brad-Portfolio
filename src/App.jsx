@@ -1,9 +1,9 @@
 import './App.css';
 import { useState } from 'react';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 
 function App() {
-  return <Navbar />;
+  return <Header />;
 }
 
 export default App

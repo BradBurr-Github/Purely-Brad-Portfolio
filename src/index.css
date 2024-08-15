@@ -1,3 +1,18 @@
+:root {
+  --primary-color: #93C6D6; /* Example color */
+  --secondary-color: #FF6347; /* Example color */
+  --accent-color: #FFD700; /* Example color */
+  --background-color: #F0F8FF; /* Example color */
+  --text-color: #2F4F4F; /* Example color */
+}
+
+header {
+  background-color: lightsteelblue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
 .body {
     background-color: lightsteelblue; /* For browsers that do not support gradients */
     background-image: linear-gradient(lightsteelblue, lavender);
