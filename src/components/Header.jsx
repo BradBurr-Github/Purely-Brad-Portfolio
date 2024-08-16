@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import myPicture from '../../assets/images/myPicture.jpg';
+import Navigation from './Navigation';
 
 function Header() {
-    return (  
+    return (
         <header className="font-[Poppins] header">
             <div className='heading-picture-name-title'>
                 <div>
@@ -12,21 +13,10 @@ function Header() {
                     <div className="heading-name">Brad Burr</div>
                     <div className="heading-title">Senior Software Engineer</div>
                 </div>
+                <div className="header-links">
+                    <Navigation />
+                </div>
             </div>
-            <ul className="header-links">
-                <li>
-                    <a className="hover:text-gray-200" href="#">My Portfolio</a>
-                </li>
-                <li>
-                    <a className="hover:text-gray-200" href="#">Experience</a>
-                </li>
-                <li>
-                    <a className="hover:text-gray-200" href="#">About Me</a>
-                </li>
-                <li>
-                    <a className="hover:text-gray-200" href="#">Contact Me</a>
-                </li>
-            </ul>
         </header>
     );
 }
