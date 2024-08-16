@@ -8,16 +8,16 @@ function Navigation() {
     return (
       <ul className="header-links">
           <li>
-              <a className="hover:text-gray-200" href="#">About Me</a>
+              <a className="nav-link" href="#">About Me</a>
           </li>
           <li>
-              <a className="hover:text-gray-200" href="#">My Portfolio</a>
+              <a className="nav-link" href="#">My Portfolio</a>
           </li>
           <li>
-              <a className="hover:text-gray-200" href="#">Contact Me</a>
+              <a className="nav-link" href="#">Contact Me</a>
           </li>
           <li>
-              <a className="hover:text-gray-200" href="#">Resumé</a>
+              <a className="nav-link" href="#">Resumé</a>
           </li>
       </ul>
     );

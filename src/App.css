@@ -78,5 +78,7 @@ header {
   align-items: flex-end;
 }
 
-
+a.nav-link:hover {
+  color:#FF6347;
+}
 
