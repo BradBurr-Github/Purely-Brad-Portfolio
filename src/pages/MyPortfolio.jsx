@@ -1,10 +1,10 @@
 import Header from "../components/Header";
-import imageSkyCast from "../../assets/images/skyCast.png"
-import noteHub from "../../assets/images/noteHub.png"
-import employeePayroll from "../../assets/images/employeePayroll.png"
-import personalBlog from "../../assets/images/personalBlog.png"
-import taskTracker from "../../assets/images/taskTracker.png"
-import profilePage from "../../assets/images/profilePage.png"
+import imageSkyCast from "../../assets/images/skyCast.png";
+import noteHub from "../../assets/images/noteHub.png";
+import employeePayroll from "../../assets/images/employeePayroll.png";
+import personalBlog from "../../assets/images/personalBlog.png";
+import taskTracker from "../../assets/images/taskTracker.png";
+import profilePage from "../../assets/images/profilePage.png";
 
 export default function MyPortfolio() {
 

@@ -3,10 +3,9 @@ export function validateEmail(email) {
     return re.test(String(email).toLowerCase());
   }
   
-  export function checkPassword(input) {
-    const passw = /^[A-Za-z]\w{7,14}$/;
-    if (input.match(passw)) {
-      return true;
-    }
-    return false;
-  }
+export const biographyOne = "I am a seasoned software engineer who has 25+ years of experience in developing C++ and C# applications in Windows environments. I have a deep understanding of SQL Server databases and am proficient in writing complex queries and stored procedures. My passion for coding and problem-solving drives me to build high-performance applications that meet user needs and business objectives."
+export const biographyTwo = "I have recently finished a 6-month web programming bootcamp at the University of Utah and posess the skills and knowledge needed to be a Full Stack Developer. With a deep understanding of both client-side and server-side technologies, I excel in creating seamless and dynamic user experiences while ensuring scalable and efficient back-end functionality. I am committed to staying current with industry trends and emerging technologies to continuously improve my skills and deliver innovative solutions. Whether working independently or as part of a team, I approach each project with a focus on quality, efficiency, and user satisfaction.";
+
+
+
+
