@@ -1,10 +1,11 @@
-
+import Header from "../components/Header";
 
 export default function Resume() {
 
   return (
-    <div className="container pt-4">
-        Resumé
-    </div>
+    <>
+      <Header />
+      <h2>Resumé</h2>
+    </>
   );
 }

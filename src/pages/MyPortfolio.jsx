@@ -1,10 +1,11 @@
+import Header from "../components/Header";
 
-
-export default function Resume() {
+export default function MyPortfolio() {
 
   return (
-    <div className="container pt-4">
-        My Portfolio
-    </div>
+    <>
+      <Header />
+      <h2>My Portfolio</h2>
+    </>
   );
 }

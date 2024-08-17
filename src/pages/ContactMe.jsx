@@ -1,11 +1,12 @@
+import Header from "../components/Header";
 
 
-
-export default function Resume() {
+export default function ContactMe() {
 
   return (
-    <div className="container pt-4">
-        Contact Me
-    </div>
+    <>
+      <Header />
+      <h2>Contact Me</h2>
+    </>
   );
 }

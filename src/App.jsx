@@ -1,18 +1,27 @@
-import './App.css';
-import { useState } from 'react';
-import Header from './components/Header';
-import Project from './components/Project';
-import Footer from './components/Footer';
+
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import AboutMe from './pages/AboutMe';
+import MyPortfolio from "./pages/MyPortfolio";
+import ContactMe from "./pages/ContactMe";
+import Resume from "./pages/Resume";
+import NoPage from "./pages/NoPage";
+import './App.css';
+
 
 function App() {
   return (
-    <>
-    <Header />
-    <Project />
-    <AboutMe />
-    <Footer />
-    </>
+    <div>
+      <Router>
+        <Routes>
+          <Route index element={<AboutMe />} />
+          <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/myportfolio" element={<MyPortfolio />} />
+          <Route path="/contactme" element={<ContactMe />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+      </Router>
+    </div>
   )
 }
 

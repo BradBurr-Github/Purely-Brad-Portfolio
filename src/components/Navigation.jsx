@@ -1,23 +1,21 @@
 import { useState, useEffect } from 'react';
-
-
-
+import { Link } from "react-router-dom";
 
 
 function Navigation() {
     return (
       <ul className="header-links">
           <li>
-              <a className="nav-link" href="#">About Me</a>
+              <Link className="nav-link" to="/aboutme">About Me</Link>
           </li>
           <li>
-              <a className="nav-link" href="#">My Portfolio</a>
+              <Link className="nav-link" to="/myportfolio">My Portfolio</Link>
           </li>
           <li>
-              <a className="nav-link" href="#">Contact Me</a>
+            <Link className="nav-link" to="/contactme">Contact Me</Link>
           </li>
           <li>
-              <a className="nav-link" href="#">Resumé</a>
+              <Link className="nav-link" to="/resume">Resumé</Link>
           </li>
       </ul>
     );

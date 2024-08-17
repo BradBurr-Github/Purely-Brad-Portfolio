@@ -1,12 +1,11 @@
 import Header from "../components/Header";
 
-export default function AboutMe() {
+export default function NoPage() {
 
   return (
     <>
       <Header />
-      <h2>About Me</h2>
+      <h2>NO PAGE</h2>
     </>
   );
 }
-  
