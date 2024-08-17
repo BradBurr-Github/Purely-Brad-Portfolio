@@ -5,18 +5,19 @@ import Footer from './Footer';
 const styles = {
   input: {
     padding: '10px',
-    margin: '0px 0px 0px 20px',
+    margin: '2px 2px 20px 0px',
     border: '1px solid #ccc',
     box: 'border-box',
+    width: "300px"
   },
   button: {
-    padding: "10px",
+    padding: "12px",
+    width: "300px",
     background: 'green',
     color: 'white',
     border: '4px',
     cursor: 'pointer',
     font: '16px',
-    margin: '0px 0px 0px 20px',
   }, 
 };
 
@@ -74,7 +75,7 @@ function Contact() {
 
       {/* onSubmit={handleFormSubmit}> */}
 
-        <label>Name:</label>
+        <label>Name:</label><br/>
         <input
           //value={userName}
           style={styles.input}
@@ -84,7 +85,7 @@ function Contact() {
           placeholder="username"
         />
         <br/>
-        <label>Email:</label>
+        <label>Email:</label><br/>
         <input
           //value={email}
           style={styles.input}
@@ -92,6 +93,16 @@ function Contact() {
           //onChange={handleInputChange}
           type="email"
           placeholder="email"
+        />
+        <br/>
+        <label>Message:</label><br/>
+        <textarea
+          //value={email}
+          style={styles.input}
+          name="message"
+          //onChange={handleInputChange}
+          type="text"
+          placeholder="message"
         />
         <br/>
         
