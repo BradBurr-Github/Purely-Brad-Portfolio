@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export default function AboutMe() {
@@ -6,6 +7,7 @@ export default function AboutMe() {
     <>
       <Header />
       <h1 className="pageTitle">About Me</h1>
+      <Footer />
     </>
   );
 }

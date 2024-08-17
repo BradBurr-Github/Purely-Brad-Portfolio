@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 
 function Footer() {
   return ( 
-    <h1>
+    <footer>
       Footer Page
-    </h1>
+    </footer>
   );
 }
   

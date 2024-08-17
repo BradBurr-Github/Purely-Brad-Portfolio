@@ -157,3 +157,9 @@ img {
 .card-container:hover .hover-link-deploy {
   opacity: 1;
 }
+
+footer {
+  text-align: center;
+  width: 100%;
+  font-size: 48px;
+}
