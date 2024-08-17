@@ -11,36 +11,48 @@ export default function MyPortfolio() {
   return (
     <>
       <Header />
-      <h1>My Portfolio</h1>
+      <h1 className="myPortfolio">My Portfolio</h1>
       <div className="container">
         <div className="card-container">
           <article className="card-article">
             <img src={imageSkyCast} alt="SkyCast picture" className="card-image"/>
+            <a href="#" className="hover-link-repo">Git Repo</a>
+            <a href="#" className="hover-link-deploy">Deployment</a>
           </article>
         </div>
         <div className="card-container">
           <article className="card-article">
             <img src={employeePayroll} alt="Employee Payroll picture" className="card-image"/>
+            <a href="#" className="hover-link-repo">Git Repo</a>
+            <a href="#" className="hover-link-deploy">Deployment</a>
           </article>
         </div>
         <div className="card-container">
           <article className="card-article">
             <img src={noteHub} alt="Note Hub picture" className="card-image"/>
+            <a href="#" className="hover-link-repo">Git Repo</a>
+            <a href="#" className="hover-link-deploy">Deployment</a>
           </article>
         </div>
         <div className="card-container">
           <article className="card-article">
             <img src={personalBlog} alt="Personal Blog picture" className="card-image"/>
+            <a href="#" className="hover-link-repo">Git Repo</a>
+            <a href="#" className="hover-link-deploy">Deployment</a>
           </article>
         </div>
         <div className="card-container">
           <article className="card-article">
             <img src={taskTracker} alt="Task Tracker picture" className="card-image"/>
+            <a href="#" className="hover-link-repo">Git Repo</a>
+            <a href="#" className="hover-link-deploy">Deployment</a>
           </article>
         </div>
         <div className="card-container">
           <article className="card-article">
             <img src={profilePage} alt="Profile Page picture" className="card-image"/>
+            <a href="#" className="hover-link-repo">Git Repo</a>
+            <a href="#" className="hover-link-deploy">Deployment</a>
           </article>
         </div>
       </div>
