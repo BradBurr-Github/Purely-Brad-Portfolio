@@ -14,10 +14,10 @@ function Header() {
                     <div className="heading-name">Brad Burr</div>
                     <div className="heading-title">Senior Software Engineer</div>
                 </div>
+            </div>
                 <div className="header-links">
                     <Navigation />
                 </div>
-            </div>
         </header>
     );
 }

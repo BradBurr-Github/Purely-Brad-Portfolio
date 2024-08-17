@@ -1,11 +1,7 @@
-/* Global Sytles */
+/* Global Styles */
 #root {
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: auto;
 }
 
 /* Global color variables */
@@ -17,15 +13,9 @@
   --text-color: #2F4F4F; /* Example color */
 }
 
-/* Styles for the Main body of my webpage */
-.main {
-  height: 100%;
-  background-color: lightsteelblue; /* For browsers that do not support gradients */
-  background-image: linear-gradient(lightsteelblue, lavender);
-  overflow-y: auto;
-}
-
 body {
+  width: 100%;
+  height: 100%;
   background-color: lightsteelblue; /* For browsers that do not support gradients */
   background-image: linear-gradient(lightsteelblue, lavender);
 }
@@ -36,8 +26,10 @@ header {
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
   text-align: left;
   justify-content: space-between;
 }
@@ -45,6 +37,7 @@ header {
 .heading-picture-name-title {
   display:flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .heading-image {
@@ -65,19 +58,28 @@ header {
 
 nav {
   font-size: 16px;
-  color: rgb(143, 30, 30);
-  margin-left: 35px;
   transition: .3s;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-end;
+  flex-wrap: wrap;  
   justify-content: space-between;
 }
 
+.header-links {
+  display: flex;
+  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 8px;
+}
 
+a.nav-link {
+  margin-right: 15px;
+}
 
-a.nav-link:hover,
+a.nav-link:hover {
+  color: red;
+}
+
 a.nav.active {
   color: yellow;
 }

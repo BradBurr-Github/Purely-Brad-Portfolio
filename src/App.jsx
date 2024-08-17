@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <>
       <Router>
         <Routes>
           <Route index element={<AboutMe />} />
@@ -21,7 +21,7 @@ function App() {
           <Route path="*" element={<NoPage />} />
         </Routes>
       </Router>
-    </div>
+    </>
   )
 }
 
