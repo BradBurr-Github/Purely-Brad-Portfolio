@@ -159,7 +159,18 @@ img {
 }
 
 footer {
-  text-align: center;
+  height: 50px; /* you can adjust this value for the size of the footer */
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  font-size: 48px;
+  padding-left: 20px;
+}
+
+.copyright {
+  justify-content: left;
+}
+
+.social-media {
+  font-size: 40px;
+  text-align: center;
 }
