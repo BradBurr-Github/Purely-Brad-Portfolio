@@ -1,27 +1,48 @@
 import Header from "../components/Header";
-//import image from "../../assets/images"
+import imageSkyCast from "../../assets/images/skyCast.png"
+import noteHub from "../../assets/images/noteHub.png"
+import employeePayroll from "../../assets/images/employeePayroll.png"
+import personalBlog from "../../assets/images/personalBlog.png"
+import taskTracker from "../../assets/images/taskTracker.png"
+import profilePage from "../../assets/images/profilePage.png"
 
 export default function MyPortfolio() {
 
   return (
     <>
       <Header />
-      <div class="container">
-        <div class="cardContainer">
-          <article class="cardArticle">
-            <img src='' alt="card" className="cardImage"/>
-            <div class="cardData">
-              <span class="cardDesc"></span>
-              <h2 href="#" class="cardButton">Github Repository</h2>
-
-            </div>
-
-
+      <h1>My Portfolio</h1>
+      <div className="container">
+        <div className="card-container">
+          <article className="card-article">
+            <img src={imageSkyCast} alt="SkyCast picture" className="card-image"/>
           </article>
-
         </div>
-
-        
+        <div className="card-container">
+          <article className="card-article">
+            <img src={employeePayroll} alt="Employee Payroll picture" className="card-image"/>
+          </article>
+        </div>
+        <div className="card-container">
+          <article className="card-article">
+            <img src={noteHub} alt="Note Hub picture" className="card-image"/>
+          </article>
+        </div>
+        <div className="card-container">
+          <article className="card-article">
+            <img src={personalBlog} alt="Personal Blog picture" className="card-image"/>
+          </article>
+        </div>
+        <div className="card-container">
+          <article className="card-article">
+            <img src={taskTracker} alt="Task Tracker picture" className="card-image"/>
+          </article>
+        </div>
+        <div className="card-container">
+          <article className="card-article">
+            <img src={profilePage} alt="Profile Page picture" className="card-image"/>
+          </article>
+        </div>
       </div>
     </>
   );
