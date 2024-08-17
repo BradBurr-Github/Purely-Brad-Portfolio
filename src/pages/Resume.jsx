@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import myResume from "../../assets/images/resume.jpg";
 
 export default function Resume() {
 
@@ -7,7 +8,7 @@ export default function Resume() {
       <Header />
       <h1 className="pageTitle">My Resumé</h1>
       <div className="resume-container">
-        <button className="resume-button" type="submit">Download PDF</button>
+        <a href={myResume} download="bradburrResume.jpg"><button className="resume-button">Download PDF</button></a>
         <p className="resume-mySkills">My Skills
           <ul className="resume-listItems">
             <li>Strong Work Ethic</li>

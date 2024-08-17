@@ -218,10 +218,11 @@ footer {
 }
 
 .resume-mySkills {
-  margin-top: 50px;
+  margin-top: 80px;
   font-size: 28px;
   font-weight: bold;
   text-align: center;
+  color: midnightblue;
 }
 
 .resume-listItems {
