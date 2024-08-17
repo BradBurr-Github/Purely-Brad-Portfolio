@@ -8,7 +8,6 @@ const styles = {
     margin: '0px 0px 0px 20px',
     border: '1px solid #ccc',
     box: 'border-box',
-    margin: '10px',
   },
   button: {
     padding: "10px",
