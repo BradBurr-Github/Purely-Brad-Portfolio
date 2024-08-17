@@ -59,26 +59,27 @@ header {
 
 .heading-title {
   font-size: 16px;
-  margin-left: 22px;
+  margin-left: 23px;
   margin-top: -10px;
 }
 
-.header-links {
+nav {
   font-size: 16px;
-  list-style: none;
+  color: rgb(143, 30, 30);
+  margin-left: 35px;
+  transition: .3s;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.header-links li {
-  margin-right: 30px;
-  display: flex;
-  flex-wrap: wrap;
   align-items: flex-end;
+  justify-content: space-between;
 }
 
-a.nav-link:hover {
-  color:#FF6347;
+
+
+a.nav-link:hover,
+a.nav.active {
+  color: yellow;
 }
+
 
