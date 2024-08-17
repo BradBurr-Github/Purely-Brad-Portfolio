@@ -197,3 +197,49 @@ footer {
 .social-media-icons ion-icon {
   font-size: 30px;
 }
+
+.resume-container {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-button {
+  width: 120px;
+  height: 40px;
+  margin-top: 30px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.resume-mySkills {
+  margin-top: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.resume-listItems {
+  display:flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  font-weight: normal;
+  width: 100%;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  display:flex;
+  flex-wrap: wrap;
+  width: calc(100% / 3);
+  height: 20px;
+  justify-content: center;
+  text-align:center;
+  margin-top: 20px;
+}
