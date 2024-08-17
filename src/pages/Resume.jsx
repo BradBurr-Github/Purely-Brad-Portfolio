@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import myResume from "../../assets/images/resume.jpg";
+import Footer from "../components/Footer";
 
 export default function Resume() {
 
@@ -35,6 +36,7 @@ export default function Resume() {
           </ul>
         </p>
       </div>
+      <Footer />
     </>
   );
 }
