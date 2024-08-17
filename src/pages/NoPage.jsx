@@ -5,7 +5,7 @@ export default function NoPage() {
   return (
     <>
       <Header />
-      <h2>NO PAGE</h2>
+      <h1 className="pageTitle">No Page was Found!</h1>
     </>
   );
 }

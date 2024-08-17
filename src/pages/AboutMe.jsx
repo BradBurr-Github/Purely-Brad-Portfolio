@@ -5,7 +5,7 @@ export default function AboutMe() {
   return (
     <>
       <Header />
-      <h2>About Me</h2>
+      <h1 className="pageTitle">About Me</h1>
     </>
   );
 }

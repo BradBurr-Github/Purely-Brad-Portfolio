@@ -6,7 +6,7 @@ export default function ContactMe() {
   return (
     <>
       <Header />
-      <h2>Contact Me</h2>
+      <h1 className="pageTitle">Contact Me</h1>
     </>
   );
 }

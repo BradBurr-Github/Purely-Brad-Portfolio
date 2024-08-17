@@ -11,7 +11,7 @@ export default function MyPortfolio() {
   return (
     <>
       <Header />
-      <h1 className="myPortfolio">My Portfolio</h1>
+      <h1 className="pageTitle">My Portfolio</h1>
       <div className="container">
         <div className="card-container">
           <article className="card-article">

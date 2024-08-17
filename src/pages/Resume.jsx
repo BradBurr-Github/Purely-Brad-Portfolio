@@ -5,7 +5,7 @@ export default function Resume() {
   return (
     <>
       <Header />
-      <h2>Resumé</h2>
+      <h1 className="pageTitle">Resumé</h1>
     </>
   );
 }
