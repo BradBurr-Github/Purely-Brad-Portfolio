@@ -159,7 +159,7 @@ img {
 }
 
 footer {
-  height: 50px; /* you can adjust this value for the size of the footer */
+  height: 100px; /* you can adjust this value for the size of the footer */
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -167,7 +167,8 @@ footer {
 }
 
 .copyright {
-  justify-content: left;
+  text-align: left;
+  font-size: 16px;
 }
 
 .social-media {

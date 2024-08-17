@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 function Footer() {
   return ( 
     <footer>
-      <div className='copyright'>© 2024 Brad Burr</div>
       <div className="social-media">
+        <p className='copyright'>© 2024 Brad Burr</p>
         <a href='https://github.com/BradBurr-Github' target='_blank'>
           <ion-icon name="logo-github"></ion-icon>
         </a>
