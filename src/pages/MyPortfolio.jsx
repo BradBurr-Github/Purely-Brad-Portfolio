@@ -5,6 +5,7 @@ import employeePayroll from "../../assets/images/employeePayroll.png";
 import personalBlog from "../../assets/images/personalBlog.png";
 import taskTracker from "../../assets/images/taskTracker.png";
 import profilePage from "../../assets/images/profilePage.png";
+import Footer from "../components/Footer";
 
 export default function MyPortfolio() {
 
@@ -62,6 +63,7 @@ export default function MyPortfolio() {
           </article>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
