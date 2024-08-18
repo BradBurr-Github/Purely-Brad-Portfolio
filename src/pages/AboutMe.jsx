@@ -7,7 +7,7 @@ import myPicture from "../../assets/images/myPicture.jpg";
 export default function AboutMe() {
 
   return (
-    <div style={{height:'100%',background:'red'}}>
+    <div>
       <Header />
       <h1 className="pageTitle">About Me</h1>
       <div className="container">

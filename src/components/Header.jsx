@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import myPicture from '../../assets/images/myPicture.jpg';
 import Navigation from './Navigation';
 import { Link } from "react-router-dom";
@@ -22,4 +21,4 @@ function Header() {
     );
 }
   
-  export default Header;
+export default Header;

@@ -1,7 +1,4 @@
-import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-
-//const [selectedLink,setSelectedLink] = useState('/');
 
 function Navigation() {
     return (

@@ -1,12 +1,11 @@
 
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutMe from './pages/AboutMe';
 import MyPortfolio from "./pages/MyPortfolio";
 import ContactMe from "./pages/ContactMe";
 import Resume from "./pages/Resume";
 import NoPage from "./pages/NoPage";
 import './App.css';
-import Header from "./components/Header";
 
 
 function App() {
