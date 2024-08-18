@@ -141,6 +141,22 @@ img {
 }
 
 /* Hover OVER cards Styling */
+.hover-link-name {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  width: 250px;
+  transform: translate(-50%, -50%);
+  background-color: midnightblue;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 .hover-link-repo {
   position: absolute;
   top: 85%;
@@ -167,6 +183,10 @@ img {
   border-radius: 10px;
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+.card-container:hover .hover-link-name{
+  opacity: 1;
 }
 
 .card-container:hover .hover-link-repo{
