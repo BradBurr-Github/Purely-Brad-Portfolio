@@ -7,7 +7,7 @@ import myPicture from "../../assets/images/myPicture.jpg";
 export default function AboutMe() {
 
   return (
-    <>
+    <div style={{height:'100%',background:'red'}}>
       <Header />
       <h1 className="pageTitle">About Me</h1>
       <div className="container">
@@ -20,7 +20,7 @@ export default function AboutMe() {
         <p className="bio-text">{biographyTwo}</p>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
   

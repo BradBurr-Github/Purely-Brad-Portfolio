@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Footer from './Footer';
 import { validateEmail } from './utils/helpers';
 
 const styles = {
@@ -34,13 +33,30 @@ function Contact() {
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state of either email, username, and message
-    if (inputType === 'email') {
-      setEmail(inputValue);
-    } else if (inputType === 'userName') {
+    // Based on the input type, we set the state of either username, email, and message
+    if (inputType === 'userName') {
       setUserName(inputValue);
+    } else if (inputType === 'email') {
+      setEmail(inputValue);
     } else {
       setMessage(inputValue);
+    }
+  };
+
+  const handleFocusOut = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+
+    if (inputType === 'userName' && !userName) {
+      setErrorMessage('Please enter a username to continue.');
+      return;
+    } else if (inputType === 'email' && !email) {
+      setErrorMessage('Please enter an email address to continue.');
+      return;
+    } else {
+      setErrorMessage('Please enter a message to continue.');
+      return;
     }
   };
 
@@ -48,17 +64,13 @@ function Contact() {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
     if(!userName) {
       setErrorMessage('Please enter a username to continue.');
       return;
     }
-    if (!validateEmail(email) || !userName) {
-      console.log('error');
+    if (!validateEmail(email)) {
       setErrorMessage('The Email you entered is invalid.');
-      // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
     if(!message) {
       setErrorMessage('Please enter a message to continue.');
@@ -66,43 +78,44 @@ function Contact() {
     }
     alert(`Email was sent to: ${email}  (but not really...)`);
 
-  // If everything goes according to plan, we want to clear out the input after a successful registration.
-  setUserName('');
-  setEmail('');
-  setMessage('');
-
+    // If everything goes according to plan, we want to clear out the input after a successful submission
+    setUserName('');
+    setEmail('');
+    setMessage('');
   }
 
   return (
-      <div className="container text-center">
+    <div className="container text-center">
       <form className="form" onSubmit={handleFormSubmit}>
-
         <label>Name:</label><br/>
         <input
-          //value={userName}
+          value={userName}
           style={styles.input}
           name="userName"
           onChange={handleInputChange}
+          onFocusOut={handleFocusOut}
           type="text"
           placeholder="username"
         />
         <br/>
         <label>Email:</label><br/>
         <input
-          //value={email}
+          value={email}
           style={styles.input}
           name="email"
           onChange={handleInputChange}
+          onFocusOut={handleFocusOut}
           type="email"
           placeholder="email"
         />
         <br/>
         <label>Message:</label><br/>
         <textarea
-          //value={email}
+          value={message}
           style={styles.input}
           name="message"
           onChange={handleInputChange}
+          onFocusOut={handleFocusOut}
           type="text"
           placeholder="message"
         />
@@ -114,7 +127,6 @@ function Contact() {
           </div>
         )}
       </form>
-      <Footer />
     </div>
   );
 }
