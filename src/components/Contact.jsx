@@ -43,22 +43,22 @@ function Contact() {
     }
   };
 
-  const handleFocusOut = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { target } = e;
-    const inputType = target.name;
+  // const handleFocusOut = (e) => {
+  //   // Getting the value and name of the input which triggered the change
+  //   const { target } = e;
+  //   const inputType = target.name;
 
-    if (inputType === 'userName' && !userName) {
-      setErrorMessage('Please enter a username to continue.');
-      return;
-    } else if (inputType === 'email' && !email) {
-      setErrorMessage('Please enter an email address to continue.');
-      return;
-    } else {
-      setErrorMessage('Please enter a message to continue.');
-      return;
-    }
-  };
+  //   if (inputType === 'userName' && !userName) {
+  //     setErrorMessage('Please enter a username to continue.');
+  //     return;
+  //   } else if (inputType === 'email' && !email) {
+  //     setErrorMessage('Please enter an email address to continue.');
+  //     return;
+  //   } else {
+  //     setErrorMessage('Please enter a message to continue.');
+  //     return;
+  //   }
+  // };
 
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
@@ -93,7 +93,6 @@ function Contact() {
           style={styles.input}
           name="userName"
           onChange={handleInputChange}
-          onFocusOut={handleFocusOut}
           type="text"
           placeholder="username"
         />
@@ -104,7 +103,6 @@ function Contact() {
           style={styles.input}
           name="email"
           onChange={handleInputChange}
-          onFocusOut={handleFocusOut}
           type="email"
           placeholder="email"
         />
@@ -115,7 +113,6 @@ function Contact() {
           style={styles.input}
           name="message"
           onChange={handleInputChange}
-          onFocusOut={handleFocusOut}
           type="text"
           placeholder="message"
         />

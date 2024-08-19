@@ -8,16 +8,18 @@ export default function AboutMe() {
 
   return (
     <div>
-      <Header />
-      <h1 className="pageTitle">About Me</h1>
-      <div className="container">
-        <div className="container-bio">
-          <p className="bio-text">
-            {biographyOne}
-          </p>
-          <img src={myPicture} alt="Picture of <Me" className="bio-image"/>
+      <div style={{height:"100vh"}}>
+        <Header />
+        <h1 className="pageTitle">About Me</h1>
+        <div className="container">
+          <div className="container-bio">
+            <p className="bio-text">
+              {biographyOne}
+            </p>
+            <img src={myPicture} alt="Picture of <Me" className="bio-image"/>
+          </div>
+          <p className="bio-text">{biographyTwo}</p>
         </div>
-        <p className="bio-text">{biographyTwo}</p>
       </div>
       <Footer />
     </div>
