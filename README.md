@@ -5,6 +5,8 @@ Purely Brad Portfolio allows users to explore the Professional Accomplishments a
 <br/>
 <img src="./assets/images/webpage.png" alt="Purely Brad Portfolio image"/>
 <br/>
+ <a href="https://lively-yeot-79af9e.netlify.app/" target="_blank">Deployed Link</a></p>
+
 ## Table of Contents
 1. [Installation](#installation)
 2. [Usage](#usage)
