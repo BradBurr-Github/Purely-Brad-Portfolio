@@ -1,7 +1,7 @@
 function Footer() {
   return ( 
     <footer>
-        <div class="social-media-icons">
+        <div className="social-media-icons">
           <a href="https://github.com/BradBurr-Github" target="_blank">
             <ion-icon name="logo-github"></ion-icon>
           </a>
