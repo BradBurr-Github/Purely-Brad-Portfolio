@@ -27,6 +27,16 @@ function Contact() {
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
+  // Send message to my Email address
+  function sendEmail() {
+    
+    const subject = `Message from ${userName}`;
+    const body = encodeURIComponent(`Name: ${userName}\nEmail: ${email}\n\nMessage:\n${message}`);
+  
+    // Open the default email client with pre-filled fields
+    window.location.href = `mailto:brad@bradburr.com?subject=${subject}&body=${body}`;
+  }
+
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
     const { target } = e;
@@ -76,7 +86,8 @@ function Contact() {
       setErrorMessage('Please enter a message to continue.');
       return;
     }
-    alert(`Email was sent to: ${email}  (but not really...)`);
+    //alert(`Email was sent to: ${email}  (but not really...)`);
+    sendEmail();
 
     // If everything goes according to plan, we want to clear out the input after a successful submission
     setUserName('');
