@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { biographyOne } from "../components/utils/helpers";
 import { biographyTwo } from "../components/utils/helpers";
-import myPicture from "../../assets/images/myPicture.jpg";
+import myPicture from "../../assets/images/Me.png";
 
 export default function AboutMe() {
 
