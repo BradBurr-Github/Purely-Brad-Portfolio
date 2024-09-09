@@ -18,7 +18,7 @@ function Navigation() {
       <Link className={`nav-link ${((activeLink === "/aboutme") || (activeLink === "/")) ? "active" : ""}`} onClick={() => handleOnClick("/aboutme")} to="/aboutme">About Me</Link>
       <Link className={`nav-link ${activeLink === "/myportfolio" ? "active" : ""}`} onClick={() => handleOnClick("/myportfolio")} to="/myportfolio">My Portfolio</Link>
       <Link className={`nav-link ${activeLink === "/contactme" ? "active" : ""}`} onClick={() => handleOnClick("/contactme")} to="/contactme">Contact Me</Link>
-      <Link className={`nav-link ${activeLink === "/resume" ? "active" : ""}`} onClick={() => handleOnClick("/resume")} to="/resume">Resumé</Link>
+      <Link className={`nav-link ${activeLink === "/resume" ? "active" : ""}`} onClick={() => handleOnClick("/resume")} to="/resume">Résumé</Link>
     </nav>
   );
 }

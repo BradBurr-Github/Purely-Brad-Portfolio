@@ -8,7 +8,7 @@ export default function Resume() {
     <div>
       <div style={{height:"100vh"}}>
         <Header />
-        <h1 className="pageTitle">My Resumé</h1>
+        <h1 className="pageTitle">My Résumé</h1>
         <div className="resume-container">
           <a href={myResume} download="bradburrResume.pdf"><button className="resume-button">Download PDF</button></a>
           <p className="resume-mySkills">My Skills
